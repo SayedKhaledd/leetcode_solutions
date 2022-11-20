@@ -3,7 +3,7 @@ class Solution {
            int high = nums.length-1, low = 0;
         int index = -1;
         while (low<=high) {
-   int mid = low + (high - low) / 2;
+   int mid = (high+low) / 2;
             if (nums[mid] == target) {
                 index = mid;
                 break;
